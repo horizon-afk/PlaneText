@@ -4,30 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:outlineProvider="none"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="102dp"
-        android:text="Enter Text"
-        android:textSize="20dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/enter_text"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextTextMultiLine"
-        android:layout_width="300dp"
-        android:layout_height="276dp"
-        android:layout_marginTop="200dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:singleLine="false"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="350sp"
+        android:layout_height="350sp"
+        android:layout_marginTop="204dp"
+        android:background="@drawable/layout_border"
+        android:foregroundTintMode="add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/textInputField"
+            android:layout_width="320sp"
+            android:layout_height="320sp"
+            android:background="@null"
+            android:ems="10"
+            android:importantForAccessibility="no"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:labelFor="@id/textInputField"
+            android:maxLength="50"
+            android:maxLines="4"
+            android:minLines="1"
+            android:scrollHorizontally="false"
+            android:textSize="30sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/displayBtn"
+        android:layout_width="90sp"
+        android:layout_height="90sp"
+        android:layout_marginTop="625dp"
+        android:background="@drawable/button_style"
+        android:importantForAccessibility="no"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

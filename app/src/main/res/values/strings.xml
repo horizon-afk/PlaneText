@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PlaneText</string>
+    <string name="enter_text">Enter Text</string>
 </resources>
