@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -16,7 +16,6 @@
             android:name=".BannerActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"
-            android:label="@string/title_activity_banner"
             android:theme="@style/Theme.PlaneText.Fullscreen"
             android:screenOrientation="landscape"/>
 
