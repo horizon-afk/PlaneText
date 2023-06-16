@@ -5,8 +5,12 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="colorPrimary">@color/white</item>
         <item name="colorSecondary">@color/black</item>
-
     </style>
 
-    <style name="Theme.PlaneText" parent="Base.Theme.PlaneText" />
+    <style name="Theme.PlaneText.Fullscreen" parent="Base.Theme.PlaneText">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+        <item name="android:statusBarColor">@android:color/white</item>
+    </style>
+
 </resources>
