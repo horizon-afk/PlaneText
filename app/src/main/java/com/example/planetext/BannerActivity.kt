@@ -1,11 +1,19 @@
 package com.example.planetext
 
-import androidx.appcompat.app.AppCompatActivity
+import android.os.Build
 import android.os.Bundle
+import android.view.WindowInsets.*
 import android.widget.TextView
+import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
+
 
 class BannerActivity : AppCompatActivity() {
+    @RequiresApi(Build.VERSION_CODES.R)
     override fun onCreate(savedInstanceState: Bundle?) {
+        window.decorView.windowInsetsController!!.hide(
+            Type.navigationBars()
+        )
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_banner)
 

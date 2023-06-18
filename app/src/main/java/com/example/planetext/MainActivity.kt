@@ -16,10 +16,11 @@ class MainActivity : AppCompatActivity() {
 
         button?.setOnClickListener {
             val text = textField.text.toString()
-            val intent = Intent(this, BannerActivity::class.java)
-            intent.putExtra("banner_text",text)
-            startActivity(intent)
-
+            if (text.isNotBlank()) {
+                val intent = Intent(this, BannerActivity::class.java)
+                intent.putExtra("banner_text", text)
+                startActivity(intent)
+            }
         }
     }
 }
