@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         button?.setOnClickListener {
             val text = textField.text.toString()
             if (text.isNotBlank()) {
+                // makes the text string go to BannerActivity
                 val intent = Intent(this, BannerActivity::class.java)
                 intent.putExtra("banner_text", text)
                 startActivity(intent)

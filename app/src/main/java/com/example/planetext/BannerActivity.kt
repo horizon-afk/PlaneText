@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 class BannerActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.R)
     override fun onCreate(savedInstanceState: Bundle?) {
+        // hides the bottom navigation bars
         window.decorView.windowInsetsController!!.hide(
             Type.navigationBars()
         )
